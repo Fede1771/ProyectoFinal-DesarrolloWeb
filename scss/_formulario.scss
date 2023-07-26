@@ -32,7 +32,7 @@
     }
      
     button {
-     @extend %buttonformulario;
+      @include botonformulario (#ffff, 16px)
     }
   }
   /*Formulario*/

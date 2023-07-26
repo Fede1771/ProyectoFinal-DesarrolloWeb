@@ -1,0 +1,11 @@
+@mixin botonformulario ($bg, $fs)
+{
+    padding: 10px 20px;
+    font-size: $fs;
+    border: solid;
+    border-radius: $border-radius;
+    font-family: $font-family-heading;
+    background-color: $bg;
+    margin-left: 10px; /* Espacio entre el input y el botón */
+    margin-top: 10px; /* Agregar margen superior */
+}
