@@ -1,0 +1,449 @@
+@charset "UTF-8";
+@import url(../pages/letras.html);
+@import url(../pages/nosotros.html);
+@import url(../pages/galeria.html);
+/* Modificadores de texto */
+h1 {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h2, .h2-custom {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h2.h2-custom {
+  font-family: "Times New Roman", Times, serif;
+}
+
+h3, h4, .tarjeta-album h4 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  text-decoration: underline;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p, pre {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+pre {
+  white-space: pre-line;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Modificadores de texto */
+/* Galeria */
+.contenedor-galeria {
+  width: 95%;
+  margin: 0 auto;
+  background-color: rgba(80, 67, 67, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  /* Para dispositivos móviles */
+  /* Para dispositivos móviles */
+}
+.contenedor-galeria .galery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 150px repeat(2, 1fr);
+  gap: 10px;
+  margin: 10px;
+  grid-template-areas: "img1 img1 img2 img2" "img1 img1 img2 img2" "img1 img1 img3 img4" "img1 img1 img3 img4" "img1 img1 img5 img6";
+}
+.contenedor-galeria .galery div {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+.contenedor-galeria .galery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.contenedor-galeria .img1 {
+  background-size: cover;
+  background-position: center;
+  grid-area: img1;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.contenedor-galeria .img2, .contenedor-galeria .img3, .contenedor-galeria .img4, .contenedor-galeria .img5, .contenedor-galeria .img6 {
+  background-size: cover;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.contenedor-galeria .img2 {
+  grid-area: img2;
+}
+.contenedor-galeria .img3 {
+  grid-area: img3;
+}
+.contenedor-galeria .img4 {
+  grid-area: img4;
+}
+.contenedor-galeria .img5 {
+  grid-area: img5;
+}
+.contenedor-galeria .img6 {
+  grid-area: img6;
+}
+@media (max-width: 480px) {
+  .contenedor-galeria .galery {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "img1" "img1" "img2" "img2" "img3" "img3" "img4" "img4" "img5" "img5" "img6" "img6";
+  }
+}
+
+/* Galeria */
+/* Redes */
+footer.redes {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Estilos para dispositivos móviles */
+  /* Estilos para dispositivos móviles */
+}
+footer.redes a {
+  display: inline-block;
+  margin: 0 2vw;
+  text-decoration: none;
+}
+footer.redes img {
+  width: 5vw;
+  height: auto;
+}
+@media only screen and (max-width: 600px) {
+  footer.redes {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer.redes a {
+    margin: 10px;
+  }
+  footer.redes img {
+    width: 8vw;
+  }
+}
+
+/* Redes */
+.navbar-custom {
+  background-color: #000000; /* Establece el color de fondo deseado para el nav */
+  /* Estilos personalizados para el menú hamburguesa */
+  /* Estilos personalizados para el menú hamburguesa */
+}
+.navbar-custom .navbar-toggler img {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+}
+@media (max-width: 550px) {
+  .navbar-custom .navbar-collapse {
+    background-color: #000000;
+  }
+}
+
+nav {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav #navbarNav {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+nav #navbarNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav #navbarNav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+nav #navbarNav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+}
+nav #navbarNav ul li a:hover {
+  background-color: #978989;
+}
+nav .nav-center {
+  color: #ffffff;
+  flex: 1;
+  text-align: center;
+  margin: 0 10px;
+}
+nav .nav-right {
+  margin-right: 10px;
+}
+nav .nav-right img {
+  height: auto;
+  width: 100%;
+  max-width: 150px;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center; /* Alinea los elementos en el centro verticalmente */
+    padding: 10px;
+  }
+  nav ul {
+    margin-top: 10px;
+    text-align: center; /* Centra los elementos del menú */
+  }
+  .nav-center {
+    margin-top: 10px;
+    margin-bottom: 10px; /* Añade un margen inferior para separar del menú */
+    text-align: center; /* Centra el texto en el centro */
+  }
+}
+/* Estilos para dispositivos móviles */
+.tarjeta-album button {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: solid;
+  border-radius: 10px;
+  font-family: "Oswald", sans-serif;
+  background-color: #ffffff;
+  margin-left: 10px; /* Espacio entre el input y el botón */
+  margin-top: 10px; /* Agregar margen superior */
+}
+
+.tarjeta-album {
+  background-color: #804e4e;
+  width: 300px;
+  border: solid 3px;
+  border-radius: 10px;
+  padding: 25px;
+  display: inline-block; /* Cambio a inline-block para que las tarjetas se coloquen en línea */
+  margin-right: 40px; /* Espacio entre las tarjetas */
+  margin-bottom: 20px;
+  text-align: center;
+}
+.tarjeta-album img {
+  width: 100%;
+}
+.contenedor-tarjetas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tarjeta-album {
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+}
+/* Estilos para dispositivos móviles */
+.tarjeta-album button {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: solid;
+  border-radius: 10px;
+  font-family: "Oswald", sans-serif;
+  background-color: #ffffff;
+  margin-left: 10px; /* Espacio entre el input y el botón */
+  margin-top: 10px; /* Agregar margen superior */
+}
+
+/*Formulario*/
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* Alineación vertical de los elementos */
+  align-items: center;
+  padding: 20px;
+  background-color: transparent;
+}
+form input,
+form select {
+  width: 400px;
+  height: 50px;
+  padding: 10px;
+  font-size: 16px;
+  border: solid;
+  font-family: "Oswald", sans-serif;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+/*Formulario*/
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 10px; /* Agrega padding a los lados del contenedor del formulario */
+  }
+  form {
+    width: 100%;
+    max-width: 400px;
+  }
+  input,
+  select {
+    width: 100%;
+    max-width: 380px; /* Reducir el ancho máximo para dar espacio a los lados */
+  }
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+/* Estilos para dispositivos móviles */
+/*Pagina inicio*/
+body {
+  background-color: #320707;
+  margin: 0; /* Añade un margen cero para evitar espacios innecesarios */
+  padding: 0; /* Añade un padding cero para evitar espacios innecesarios */
+}
+
+header {
+  background-color: transparent;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: auto;
+}
+
+/*Carrusel*/
+#CarouselFB {
+  margin-top: 20px; /* Ajusta el valor según el espacio deseado entre el carrusel y el navbar */
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/*Carrusel*/
+.titulo-musica {
+  text-align: center; /* Alineación centrada del texto "Música" */
+  margin-top: 20px; /* Ajusta el valor según el espacio deseado */
+  margin-bottom: 20px;
+  text-decoration: underline;
+  font-family: "Oswald", sans-serif;
+}
+
+/*Pagina inicio*/
+/*letras*/
+.contenedor-canciones {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(80, 67, 67, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+.contenedor-canciones .cancion {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.contenedor-canciones .cancion .titulo-cancion {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.contenedor-canciones .cancion .letra-cancion {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/*letras*/
+/*Nosotros*/
+.contenedor-nosotros {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(80, 67, 67, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+.contenedor-nosotros .us {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/*Nosotros*/
+
+/*# sourceMappingURL=styles.css.map */

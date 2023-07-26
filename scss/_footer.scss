@@ -1,0 +1,39 @@
+/* Redes */
+footer.redes {
+    background-color: $primary-color;
+    padding: 20px;
+    border-radius: $border-radius;
+    margin: 0 $footer-margin 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    a {
+      display: inline-block;
+      margin: 0 $footer-link-margin;
+      text-decoration: none;
+    }
+  
+    img {
+      width: $footer-img-width;
+      height: auto;
+    }
+  
+    /* Estilos para dispositivos móviles */
+    @media only screen and (max-width: $mobile-breakpoint) {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+  
+      a {
+        margin: $footer-link-mobile-margin;
+      }
+  
+      img {
+        width: $footer-img-mobile-width;
+      }
+    }
+    /* Estilos para dispositivos móviles */
+  }
+  /* Redes */

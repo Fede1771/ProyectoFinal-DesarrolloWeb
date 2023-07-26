@@ -1,0 +1,67 @@
+@import "extends";
+
+/*Formulario*/
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-family-heading;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column; /* Alineación vertical de los elementos */
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+  
+    input,
+    select {
+      width: 400px;
+      height: 50px;
+      padding: 10px;
+      font-size: 16px;
+      border: solid;
+      font-family: $font-family-body;
+      border-radius: $border-radius;
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+     
+    button {
+     @extend %buttonformulario;
+    }
+  }
+  /*Formulario*/
+  
+  /* Estilos para dispositivos móviles */
+  @media only screen and (max-width: $mobile-breakpoint) {
+    .form-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      padding: 0 10px; /* Agrega padding a los lados del contenedor del formulario */
+    }
+  
+    form {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    input,
+    select {
+      width: 100%;
+      max-width: 380px; /* Reducir el ancho máximo para dar espacio a los lados */
+    }
+  
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  /* Estilos para dispositivos móviles */

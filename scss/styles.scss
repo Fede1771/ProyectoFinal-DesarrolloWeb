@@ -1,0 +1,117 @@
+@import url(../pages/letras.html);
+@import url(../pages/nosotros.html);
+@import url(../pages/galeria.html);
+
+@import "variables";
+@import "fuentes";
+@import "galeria";
+@import "footer";
+@import "navegador";
+@import "tarjetas";
+@import "formulario";
+
+
+/*Pagina inicio*/
+body {
+  background-color: $fondo-pagina;
+  margin: 0; /* Añade un margen cero para evitar espacios innecesarios */
+  padding: 0; /* Añade un padding cero para evitar espacios innecesarios */
+}
+
+header {
+  background-color: transparent;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: auto;
+}
+
+/*Carrusel*/
+#CarouselFB {
+  margin-top: 20px; /* Ajusta el valor según el espacio deseado entre el carrusel y el navbar */
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: $border-radius;
+}
+/*Carrusel*/
+
+
+.titulo-musica {
+  text-align: center; /* Alineación centrada del texto "Música" */
+  margin-top: 20px; /* Ajusta el valor según el espacio deseado */
+  margin-bottom: 20px;
+  text-decoration: underline;
+  font-family: $font-family-heading;
+}
+/*Pagina inicio*/
+
+/*letras*/
+.contenedor-canciones {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(80, 67, 67, 0.8);
+  padding: 20px;
+  border-radius: $border-radius;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+
+  .cancion {
+    margin: 20px;
+    padding: 20px;
+    border-radius: $border-radius;
+
+    .titulo-cancion {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .letra-cancion {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+}
+/*letras*/
+
+/*Nosotros*/
+.contenedor-nosotros {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(80, 67, 67, 0.8);
+  padding: 20px;
+  border-radius: $border-radius;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+
+  .us {
+    margin: 20px;
+    padding: 20px;
+    border-radius: $border-radius;
+  }
+}
+/*Nosotros*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

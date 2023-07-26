@@ -1,0 +1,18 @@
+%buttontarjetas{
+    padding: 15px 30px;
+      font-size: 18px;
+      font-family: $font-family-heading;
+      margin-top: 10px;
+      border-radius: $border-radius;
+}
+
+%buttonformulario{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: solid;
+    border-radius: $border-radius;
+    font-family: $font-family-heading;
+    background-color: #ffffff;
+    margin-left: 10px; /* Espacio entre el input y el botón */
+    margin-top: 10px; /* Agregar margen superior */
+}

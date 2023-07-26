@@ -1,0 +1,49 @@
+/* Modificadores de texto */
+h1 {
+    color: $text-color;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: $font-family-heading;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  h2, .h2-custom {
+    color: $text-color;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  h2 {
+    &.h2-custom {
+      font-family: 'Times New Roman', Times, serif;
+    }
+  }
+  
+  h3, h4, .tarjeta-album h4 {
+    color: $text-color;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: $font-family-heading;
+    text-decoration: underline;
+  }
+  
+  h4 {
+    font-size: 20px;
+  }
+  
+  p, pre {
+    color: $text-color;
+    text-align: center;
+    font-family: $font-family-body;
+  }
+  
+  pre {
+    white-space: pre-line;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+  }
+  /* Modificadores de texto */

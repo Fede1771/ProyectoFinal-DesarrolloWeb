@@ -1,0 +1,90 @@
+.navbar-custom {
+    background-color: $primary-color; /* Establece el color de fondo deseado para el nav */
+
+    .navbar-toggler img {
+      width: 50px;
+      height: 50px;
+      background-color: transparent;
+    }
+
+    /* Estilos personalizados para el menú hamburguesa */
+    @media (max-width: 550px) {
+      .navbar-collapse {
+        background-color: $primary-color;
+      }
+    }
+    /* Estilos personalizados para el menú hamburguesa */
+  }
+  nav {
+    background-color: $primary-color;
+    padding: 20px;
+    border-radius: $border-radius;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    #navbarNav {
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+  
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+  
+        li {
+          display: inline;
+          margin-right: 10px;
+  
+          a {
+            text-decoration: none;
+            color: $text-color;
+            padding: 10px;
+  
+            &:hover {
+              background-color: #978989;
+            }
+          }
+        }
+      }
+    }
+  
+    .nav-center {
+      color: $text-color;
+      flex: 1;
+      text-align: center;
+      margin: 0 10px;
+    }
+  
+    .nav-right {
+      margin-right: 10px;
+  
+      img {
+        height: auto;
+        width: 100%;
+        max-width: 150px;
+      }
+    }
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media only screen and (max-width: $mobile-breakpoint) {
+    nav {
+      flex-direction: column;
+      align-items: center; /* Alinea los elementos en el centro verticalmente */
+      padding: 10px;
+    }
+  
+    nav ul {
+      margin-top: 10px;
+      text-align: center; /* Centra los elementos del menú */
+    }
+  
+    .nav-center {
+      margin-top: 10px;
+      margin-bottom: 10px; /* Añade un margen inferior para separar del menú */
+      text-align: center; /* Centra el texto en el centro */
+    }
+  }
+  /* Estilos para dispositivos móviles */
