@@ -442,6 +442,7 @@ header {
 }
 .contenedor-nosotros .usImagen:hover {
   transform: scale(0.5) skew(15deg);
+  transition: 0.5s;
 }
 
 /*Nosotros*/
