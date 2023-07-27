@@ -144,7 +144,7 @@ footer.redes img {
   width: 5vw;
   height: auto;
 }
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 600px) {
   footer.redes {
     flex-direction: row;
     justify-content: center;
@@ -239,7 +239,7 @@ nav .nav-right img {
 }
 
 /* Estilos para dispositivos móviles */
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 600px) {
   nav {
     flex-direction: column;
     align-items: center; /* Alinea los elementos en el centro verticalmente */
@@ -286,14 +286,13 @@ nav .nav-right img {
 }
 
 /* Estilos para dispositivos móviles */
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 600px) {
   .contenedor-tarjetas {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
   .tarjeta-album {
-    margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
   }
@@ -349,7 +348,7 @@ form button {
 
 /*Formulario*/
 /* Estilos para dispositivos móviles */
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 600px) {
   .form-container {
     display: flex;
     align-items: center;
